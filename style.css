@@ -1,0 +1,1233 @@
+/*
+Theme Name: nocturnalgg_com_V1
+Theme URI: http://nocturnalgg.com
+Version: 1
+Date Launched: 09-21-2017
+Last Edit: 09-25-2017
+Author: Jeremy Ryan Palmer
+Author URI: http://jeremyryanpalmer.com
+*/
+
+/*===============================================================================*/
+/*============================================================== Reset Styles ===*/
+/*===============================================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+body {
+  color: black;
+  background: white;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}
+
+/*===============================================================================*/
+/*============================================================== Main Styles ====*/
+/*===============================================================================*/
+
+.grey {color:#aaaaaa;}
+.yellow {color:#fab937;}
+.background {color:#dddddd;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.justify {text-align:justify;}
+.margin-left {margin-left:2em; text-align:left;}
+.padding-left {padding-left:2em; text-align:left;}
+.indent {text-indent:2em;}
+.negative_indent {text-indent:-0.4em;}
+
+@media screen {
+
+body {
+  background:#dddddd;
+  font-size:24px;
+  width:100%;
+  }
+
+b, strong {
+  font-weight: bold;
+}
+i, em {
+  font-style: italic;
+}
+u {
+  text-decoration: underline;
+}
+abbr, acronym {
+  cursor: help;
+  border-bottom: 1px dotted #cccccc;
+}
+td, td img { vertical-align: top; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+code {
+  font: 0.9em/1.1em sans-serif;
+  color: #555;
+  text-align:justify;
+  font-weight:400;
+  padding:1em 1em 1em 1em;
+}
+
+pre {
+  background: #fff;
+  padding: 0.7em;
+  text-align:justify;
+  margin: 1em;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -moz-box-shadow: inset 0 0 0.2em 0.2em #ccc;
+  -webkit-box-shadow: inset 0 0 0.2em 0.2em #ccc;
+  box-shadow: inset 0 0 0.2em 0.2em #ccc;
+}
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+/* make buttons play nice in IE:
+    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+
+table { margin-bottom: 1em; }
+th {
+  font-weight: bold;
+  padding: 0 0.2em;
+}
+td { padding: 0 0.2em; }
+
+/*===============================================================================*/
+/*============================================================== Clearfix =======*/
+/*===============================================================================*/
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+/*===============================================================================*/
+/*============================================================== Links ==========*/
+/*===============================================================================*/
+
+a  {
+  text-decoration: none;
+  }
+
+/*===============================================================================*/
+/*============================================================== Divs ===========*/
+/*===============================================================================*/
+
+#carousel {
+	background:#cccccc;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#1 {
+	background:#999999;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#2 {
+	background:#cccccc;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+/*===============================================================================*/
+/*============================================================== hgroup =========*/
+/*===============================================================================*/
+
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 63px;
+  height: 72px;
+  background: url(http://nocturnalgg.com/wp-content/themes/nocturnalgg_com_V1/images/main_logos_banner.svg);
+  background-size: 63px 72px;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:20px;
+}
+
+.spacer {
+	margin: 21px auto auto auto;
+}
+
+hgroup {
+  background:none;
+  clear:both;
+  top:0px;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:1000;
+  }
+
+hgroup h1 {
+  font: 1.6em sans-serif;
+  color: #fab937;
+  font-weight: 800;
+  letter-spacing:0pt;
+  word-spacing: 0pt;
+  display: block;
+  border-radius: 0.4em;
+  padding:0em;
+  margin: 0px 0px 0.3em 0px;
+  z-index:1000;
+  }
+
+hgroup h2 {
+  font: 1em/1.4em serif;
+  color: #555555;
+  position:relative;
+  left:0;
+  right:0;
+  font-weight:300;
+  letter-spacing: 0pt;
+  word-spacing: 2pt;
+  text-shadow:1px 1px 1px #dfe2e2;
+  padding:0.1em 0em 0.4em 0em;
+  margin:0.1em 0em 0.4em 0em;
+  z-index:1;
+}
+
+.synopsis {
+  font: 1em/1.4em 'Questrial', serif;
+  color: #555;
+  background: none;
+  font-style:normal;
+  clear:both;
+
+  padding:0.2em 0em 0.2em 0em;
+  margin: 0.2em 5px 0.2em 5px;
+  text-shadow: 1px 1px #ddd;
+}
+
+
+#tagline {}
+
+#header1 {text-align:center;!important}
+#header1 a {color:#999;}
+
+
+/*===============================================================================*/
+/*============================================================== nav ============*/
+/*===============================================================================*/
+
+/*------------------------------------*\
+    Flaunt JS Navigation
+\*------------------------------------*/
+
+.nav {
+	position:relative;
+	display:inline-block;
+	top:0px;
+	font-size:20px;
+	list-style-type: none;
+	z-index:6001;
+	margin:auto;
+}
+.nav-list {
+  	font: 1em/1.2em sans-serif;
+  	color: #333333;
+	font-weight:400;
+	text-align:center;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+	list-style-type: none;
+    border-right: 1px solid white;
+    width: auto;
+}
+.nav-item a {
+	display:block;
+	color:#333333;
+	padding:15px 10px;
+	background:#eeeeee;
+	border-bottom:2px solid #ffffff;
+	list-style-type: none;
+}
+.nav-item > a:hover {
+	background:#fab937;
+	color:#111111;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	text-align:center;
+	left:0;
+	width:300px;
+	list-style-type: none;
+}
+.nav-submenu-item a {
+	background:#eeeeee;
+	color:#333333;
+	border-bottom:2px solid #ffffff;
+	display:block;
+	padding:13px 10px 13px 10px;
+}
+.nav-submenu-item a:hover {
+	background:#fab937;
+	color:#111111;
+}
+/* Mobile navigation */
+
+.nav-mobile:before {
+	color:#ffffff;
+	content:' Menu ';
+	text-shadow: 1px 1px 1px #666666;
+	}
+
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:relative;
+	top:0;
+	background:#333333 url(http://nocturnalgg.com/wp-content/themes/nocturnalgg_com_V1/images/menu.svg) no-repeat right center;
+	background-size:32px;
+	background-position: 125px;
+	height:40px;
+	width:130px;
+	padding: 10px 30px 0px 40px;
+	margin: auto;
+	-moz-border-radius:0px 0px 30px 0px;
+	border-radius:0px 0px 30px 0px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	border-left:2px solid #cccccc;
+	height:40px;
+	width:120px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:40px;
+	width:40px;
+	background:url(http://nocturnalgg.com/images/required/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#cccccc;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+		font-size:26px;
+		font-weight:900;
+	}
+
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+}
+
+/*===============================================================================*/
+/*============================================================== tables =========*/
+/*===============================================================================*/
+
+table {
+  font-size:0.8em;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 2px solid #ccc;
+  text-align: left;
+}
+
+/*===============================================================================*/
+/*========================================================= separator ===========*/
+/*===============================================================================*/
+
+#separator {
+	background:#cccccc;
+	width:auto;
+	height:auto;
+	padding:0px;
+	margin:0px;
+}
+
+
+/*===============================================================================*/
+/*============================================================== carousel =======*/
+/*===============================================================================*/
+
+.carousel_block {
+	background:#fff;
+	width:auto;
+	height:auto;
+	padding:15px;
+	margin:0px;
+}
+
+.carousel_space {
+	background:none;
+	width:auto;
+	height:232px;
+	margin:auto;
+}
+
+#owl {
+	background:#eeeeee;
+	padding:4px;
+	margin:0px;
+}
+
+#owl .item{
+	padding:10px;
+	margin:10px;
+}
+
+#carousel h2  {
+  font: 0.8em/1em sans-serif;
+  color: #333;
+  text-align: center;
+  clear:both;
+  font-weight: 400;
+
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #ddd;
+  padding:0em 0em 0em 0em;
+  margin:0em 0em 0em 0em;
+}
+
+#carousel p  {
+  font: 1em/1.4em 'Questrial', serif;
+  color: #333333;
+  background: none;
+  font-style:normal;
+  text-align:justify;
+  clear:both;
+
+  padding:0.2em 0em 0.2em 0em;
+  margin: 0.2em 5px 0.2em 5px;
+  text-shadow: 1px 1px #ffffff;
+}
+
+#carousel p strong {
+  color: #999999;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+}
+
+#carousel p em {
+  color: #777777;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+}
+
+#carousel blockquote {
+}
+
+#carousel cite {
+}
+
+#carousel blockquote p {
+  font:1.6em/1.9em serif;
+  color: #666666;
+  background: none;
+  text-align:left;
+  font-weight: normal;
+  clear:both;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+
+  line-height: 42px;
+  padding:0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #eeeeee;
+  -moz-border-radius:none;
+  border-radius:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+#carousel cite p {
+  font: 0.8em sans-serif;
+  color: #777777;
+  background: none;
+  text-align: right;
+  clear:both;
+  font-weight:500;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding:5px;
+  margin:3px;
+  text-shadow:none;
+}
+
+#carousel cite p a {
+  color: #666666;
+}
+
+/*===============================================================================*/
+/*============================================================== Quotations =====*/
+/*===============================================================================*/
+
+article blockquote {
+  font:0.9em/0.9em serif;
+  color: #555555;
+  background: none;
+  font-weight: normal;
+  clear:both;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding:0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #eeeeee;
+  -moz-border-radius:none;
+  border-radius:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+cite {
+  font: 0.8em/1emserif;
+  color: #555555;
+  background: none;
+  font-weight:400;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  !important
+  text-shadow:none;
+}
+
+cite em {
+  font: 1.2em/1.4em 'Questrial', serif;
+  font-style: italic;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow:none;
+}
+
+/*===============================================================================*/
+/*============================================================== List ===========*/
+/*===============================================================================*/
+
+.article p li {
+  font: 1.2em/1.6em 'Libre Baskerville', serif;
+  text-align: left;
+  font-weight:200;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  list-style-type: none;
+}
+
+.article p li a {
+  color:#333;
+  text-decoration:none;
+}
+
+/*---- unordered lists ----*/
+
+.article ul {
+  background-color: none;
+  list-style-type: none;
+}
+
+.article ul li:nth-child(odd) {
+  background-color: #cedfeb;
+  color: #333333;
+  padding:0.3em 0.7em 0.3em 0.7em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: 1px 1px #ffffff;
+  list-style-type: none;
+}
+
+.article ul li:nth-child(even) {
+  background-color: #e6eff5;
+  color: #333333;
+  padding:0.3em 0.7em 0.3em 0.7em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: 1px 1px #e6eff5;
+  list-style-type: none;
+}
+
+.article ul li:nth-child(odd)  a {
+  color:#111111;
+  text-decoration:none;
+  display: block;
+}
+
+.article ul li:nth-child(even) a {
+  color:#111111;
+  text-decoration:none;
+  display: block;
+}
+
+/*---- ordered lists ----*/
+
+
+.article ol {
+  font: 1em/1.4em 'Questrial', serif;
+  padding:0em 0em 0em 1.2em;
+  margin:0em 0em 0em 1.1em;
+}
+
+.article ol li:nth-child(odd) {
+  background-color: #cedfeb;
+  color: #333333;
+  padding:0.3em 0.7em 0.3em 0.7em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.article ol li:nth-child(even) {
+  background-color: #e6eff5;
+  color: #333333;
+  padding:0.3em 0.7em 0.3em 0.7em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: 1px 1px #e6eff5;
+}
+
+.article ol li:nth-child(odd)  a {
+  color:#111111;
+  text-decoration:none;
+  display: block;
+}
+
+.article ol li:nth-child(even) a {
+  color:#111111;
+  text-decoration:none;
+  display: block;
+}
+
+/*===============================================================================*/
+/*============================================================== Article ========*/
+/*===============================================================================*/
+
+.article {
+  background:none;
+  clear:both;
+}
+
+.article p  {
+  font: 1em/1.4em 'Questrial', serif;
+  color: #444444;
+  background: none;
+  font-style:normal;
+  clear:both;
+  padding: 5px 2px 5px 2px;
+  text-shadow: 1px 1px #f2f7fa;
+}
+
+.article strong {
+  color: #333333;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+}
+
+.article em {
+  color: #333333;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px #dfe2e2;
+}
+
+/*===============================================================================*/
+/*============================================================== Header =========*/
+/*===============================================================================*/
+
+#article_title {
+  font: 1.3em sans-serif;
+  background:none;
+  color: #fab937;
+  font-weight: 800;
+  letter-spacing: 0pt;
+  word-spacing: 0pt;
+  padding:0.6em;
+  margin: 0em;
+  text-shadow: 1px 1px 2px #000;}
+
+h1 {
+    }
+
+h1 a {
+    }
+
+article h1 {
+  }
+
+h2  {
+  font: 1.2em/1.6em sans-serif;
+  color: #21282b;
+  clear:both;
+  font-weight: 400;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #ddd;
+  padding:1em 0em 0.5em 0em;
+  margin:0.3em 0em 0.3em 0em;
+}
+
+
+article h2  {
+  font: 1.2em/1.6em  sans-serif;
+  color: #21282b;
+  clear:both;
+  font-weight: 400;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #ddd;
+  padding:1em 0em 0.5em 0em;
+  margin:0.3em 0em 0.3em 0em;
+}
+
+h3  {
+  font: 1em/1.2em sans-serif;
+  color: #333333;
+  clear:both;
+  font-weight: 400;
+
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0em;
+}
+
+article h3  {
+  font: 1em/1.2em sans-serif;
+  color: #333333;
+  clear:both;
+  font-weight: 400;
+
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0em;
+}
+
+h4  {
+  font: 1em/1em sans-serif;
+  color: #444444;
+  clear:both;
+  font-weight: 300;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.0em;
+}
+
+article h4  {
+  font: 1em/1em sans-serif;
+  color: #444444;
+  clear:both;
+  font-weight: 300;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.0em;
+}
+
+article h5  {
+  font: 0.9em/1.2em sans-serif;
+  color: #555555;
+  clear:both;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 2px #999;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.4em;
+}
+
+/*===============================================================================*/
+/*============================================================== Section ========*/
+/*===============================================================================*/
+
+
+section {
+}
+
+#buffer {
+margin-top:90px;
+}
+
+/*===============================================================================*/
+/*============================================================== BBPress ========*/
+/*===============================================================================*/
+
+
+.bbPress #bbp_stick_topic, .bbPress label[for="bbp_stick_topic"], .bbPress .bbp_stick_topic, .bbPress label[for="bbp_stick_topic"] {
+
+display:none !important;
+}
+
+
+button {
+    font: 1em '.HelveticaNeueDeskInterface-Regular';
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    margin:auto;
+    display: inline-block;
+    text-align: start;
+}
+
+/*===============================================================================*/
+/*============================================================== Aside ==========*/
+/*===============================================================================*/
+
+aside {
+  font: 0.8em/1.2em 'Cabin', sans-serif;
+  color: #eeeeee;
+  background:#fab937;
+  text-align: left;
+  clear:both;
+  height:auto;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  margin: 0em 0.4em 0em 0.4em;
+}
+
+aside p {
+  font: 0.9em/1.2em 'Cabin', sans-serif;
+  color: #ddd;
+  background:none;
+  text-align: left;
+  clear:both;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding: 0em;
+  margin: 0.2em;
+}
+
+aside ul li {
+  font: 0.8em/1.2em 'Cabin', sans-serif;
+  color: #565656;
+  background:none;
+  text-align: left;
+  clear:both;
+  font-weight: normal;
+  padding:0em 0em 0em 0.4em;
+  margin: 0em 0em 0em 0.3em;
+}
+
+aside h2  {
+  font: 1.1em/1.4em 'Cabin', sans-serif;
+  color: #ffffff;
+  text-align: left;
+  clear:both;
+  font-weight: normal;
+
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #222222;
+  padding:0em 0em 0.3em 0em;
+  margin:0em 0em 0.3em 0em;
+}
+
+aside h3  {
+  font: 1em/1.2em 'Cabin', sans-serif;
+  color: #ddd;
+  background:none;
+  text-align: left;
+  clear:both;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding: 0em;
+  margin: 0.2em;
+  text-shadow:none;
+}
+
+.aside {
+  font: 1em/1.2em 'Cabin', sans-serif;
+  color: #ddd;
+  background:none;
+  text-align: left;
+  clear:both;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding: 0em;
+  margin: 0.2em;
+  text-shadow:none;
+}
+
+/*===============================================================================*/
+/*============================================================== Media ==========*/
+/*===============================================================================*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*===============================================================================*/
+/*============================================================== Sidebar ========*/
+/*===============================================================================*/
+
+#sidebar {
+  background:none;
+  padding:0.4em 0.4em 0em 0.4em;
+  margin: 0.4em 0.4em 0em 0.4em;
+  }
+
+#sidebar p  {
+  font: 0.7em/1.2em Arial, sans-serif;
+  color: #777777;
+  background: none;
+  font-weight: 400;
+    text-align:justify;
+    clear:both;
+  padding:0.2em 0.3em 0.2em 0.3em;
+  margin: 0.4em 0.7em 0.4em 0.7em;
+}
+
+#sidebar em {
+  color: #21282b;
+  font: 0.7em/1.2em 'Puritan', arial, serif;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+}
+
+#sidebar h1
+  {
+  font: 1.4em/1.2em 'Questrial', serif;
+  background:none;
+  color: #6c0d63;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2pt;
+  padding:0.4em;
+  margin: -0.4em -0.4em 0.4em -0.4em;
+  text-shadow: 1px 1px 2px #0f3a58;
+    }
+
+#sidebar h2  {
+  font: 0.7em/1.2em serif;
+  margin: 0em;
+  color: #777777;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  padding:3px 0em 0.2em 0.4em;
+  margin:0.2em 0em 0.2em 0.4em;
+}
+
+/*===============================================================================*/
+/*============================================================== Footer =========*/
+/*===============================================================================*/
+
+footer {
+  background:#ffffff;
+  color: #ccc;
+  padding:auto;
+  margin:auto;
+  text-align: center;
+  }
+
+footer a {
+  color: #555;
+  font: 0.7em sans-serif;
+  letter-spacing: .7pt;
+  word-spacing: -0.8pt;
+  text-shadow:none;
+  height:auto;
+  }
+
+footer a:hover {
+  color: #556556;
+  background:none;
+  font: 0.7em sans-serif;
+  letter-spacing: .7pt;
+  word-spacing: -0.8pt;
+  text-shadow:1px 1px 1px #bbbbbb;
+  height:auto;
+  }
+
+}
+
+/*===============================================================================*/
+/*============================================================== SMALLER ========*/
+/*===============================================================================*/
+
+@media handheld, only screen and (max-width: 767px) {
+
+/*===============================================================================*/
+/*=============================================================== Main Styles ===*/
+/*=============================================================== Mobile ========*/
+/*===============================================================================*/
+
+body {
+  background: #dddddd;
+  font-size:23px;
+  }
+
+hgroup {
+  background:none;
+  clear:both;
+  top:70px;
+  left:0;
+  right:0;
+  margin:70px auto auto auto;
+  z-index:1000;
+  }
+
+article {
+  background:none;
+  clear:both;
+  padding:0em;
+  margin:0em;
+}
+
+article p  {
+  font: 1.1em/1.5em 'Questrial', serif;
+  color: #222222;
+  background: none;
+  font-style:normal;
+  text-align:justify;
+  clear:both;
+  padding:0px;
+  margin: 10px 0px 10px 0px;
+}
+
+.spacer {
+	margin: 18px 0px 0px 0px;
+}
+
+aside {display:none;}
+
+th {display:none}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #ccc;
+		position: relative;
+		padding-left: 35%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 60%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*
+	Label the data
+	*/
+
+
+}
+
+/*===============================================================================*/
+/*============================================================== SMALLEST =======*/
+/*===============================================================================*/
+
+@media handheld, only screen and (max-width: 624px) and (-webkit-min-device-pixel-ratio: 2) {
+
+/*===============================================================================*/
+/*=============================================================== Main Styles ===*/
+/*=============================================================== Mobile ========*/
+/*===============================================================================*/
+
+body {
+  background: #dddddd;
+  font-size:21px;
+  }
+
+
+.margin-left {margin-left:0;}
+.padding-left {padding-left:0;}
+
+hgroup {
+  background:none;
+  clear:both;
+  top:0px;
+  left:0;
+  right:0;
+  margin:70px auto auto auto;
+  z-index:1000;
+  }
+
+article h2  {
+  font: 1.1em/1.4em  sans-serif;
+  color: #333;
+  text-align: center;
+  clear:both;
+  font-weight: 400;
+
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #ddd;
+  padding:0em 0em 0.3em 0em;
+  margin:0em 0em 0.3em 0em;
+}
+
+.spacer {
+	margin: 16px 0px 0px 0px;
+}
+
+aside {display:none;}
+
+#buffer {
+margin-top:45px;
+}
+
+}

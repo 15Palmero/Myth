@@ -1,0 +1,288 @@
+/*
+print css
+Version: 1
+Date Launched: 09-21-2017
+Last Edit: 09-25-2017
+Author: Jeremy Ryan Palmer
+Author URI: http://nocturnalgg.com
+*/
+
+
+@media print {
+
+	.grey {color:#aaaaaa;}
+	.yellow {color:#fab937;}
+	.background {color:#dddddd;}
+	.left {text-align:left;}
+	.right {text-align:right;}
+	.center {text-align:center;}
+	.justify {text-align:justify;}
+	.margin-left {margin-left:2em; text-align:left;}
+	.padding-left {padding-left:2em; text-align:left;}
+	.indent {text-indent:2em;}
+	.negative_indent {text-indent:-0.4em;}
+.negative_indent {text-indent:-0.4em;}
+
+body {
+  background:none;
+  font-size:20px
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+
+.row .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+}
+
+#header1 {display:none;}
+
+.spacer {display:none;}
+
+#no_print {display:none;}
+
+/*====================*/
+/*=== Links ==========*/
+/*====================*/
+
+a  {
+  text-decoration: none;
+  }
+
+/*====================*/
+/*=== Nav ============*/
+/*====================*/
+
+nav {
+  display:none;
+  }
+
+.nav {
+  display:none;
+  }
+
+
+/*====================*/
+/*=== List ===========*/
+/*====================*/
+
+article p ul {
+  background-color: #555555;
+  list-style-type: none;
+}
+
+article p ol {
+  font: 1em/1.4em 'Libre Baskerville', serif;
+  color: #777777;
+  position:relative;
+  padding:0.3em;
+  margin:0.2em 0.2em 0.2em 0.2em;
+}
+
+article p li {
+  font: 1em/1.4em 'Libre Baskerville', serif;
+  font-weight:200;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  list-style-type: none;
+}
+
+article p li a {
+  color:#333;
+  text-decoration:none;
+}
+
+article ul li:nth-child(odd) {
+  background-color: #ffffff;
+  color: #222222;
+  padding:0.3em 0.3em 0.3em 0.3em;
+  margin: 0em 0em 0em 0em;
+  list-style-type: none;
+}
+
+article ul li:nth-child(even) {
+  background-color: #888888;
+  color: #ffffff;
+  padding:0.3em 0.3em 0.3em 0.3em;
+  margin: 0em 0em 0em 0em;
+  list-style-type: none;
+  text-shadow: 1px 1px #222222;
+}
+
+article ul li:nth-child(odd)  a {
+  color:#333;
+  text-decoration:none;
+}
+
+article ul li:nth-child(even) a {
+  color:#fff;
+  text-decoration:none;
+}
+
+
+
+/*====================*/
+/*=== Article ========*/
+/*====================*/
+
+article {
+  background:none;
+  clear:both;
+  padding:0px;
+  margin:0px 0px 0px 0px;
+}
+
+article p  {
+  font: 1em/1.4em 'Questrial', serif;
+  color: #333333;
+  background: none;
+  font-style:normal;
+  clear:both;
+  padding:0.2em 0em 0.2em 0em;
+  margin: 0.2em 5px 0.2em 5px;
+  text-shadow: 1px 1px #ffffff;
+}
+
+article strong {
+  color: #fab937;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+}
+
+article em {
+  color: #21282b;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.3pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px #dfe2e2;
+}
+
+/*---- ordered lists ----*/
+
+
+.article ol {
+  font: 1em/1.4em 'Questrial', serif;
+  padding:0em 0em 0em 1.5em;
+  margin:0em 0em 0em 1.5em;
+}
+
+.article ol li:nth-child(odd) {
+  background-color: #eeeeee;
+  color: #666666;
+  padding:0.3em 0.3em 0.3em 0.3em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: none;
+}
+
+.article ol li:nth-child(even) {
+  background-color: none;
+  color: #666666;
+  padding:0.3em 0.3em 0.3em 0.3em;
+  margin: 0em 0em 0em 0em;
+  text-shadow: none
+}
+
+.article ol li:nth-child(odd)  a {
+  color:#333;
+  text-decoration:none;
+}
+
+.article ol li:nth-child(even) a {
+  color:#333;
+  text-decoration:none;
+}
+
+
+/*====================*/
+/*=== Header =========*/
+/*====================*/
+
+h1 {}
+
+h1 a {}
+
+article h1 {
+}
+
+#article_title {
+  font: 1.3em/1.5em sans-serif !important;
+  background:none;
+  color: #fab937;
+  font-weight:800;
+  padding:0em;
+  margin: 0em;
+}
+
+h2  {
+  font: 1.2em/1.4em sans-serif;
+  color: #333;
+  clear:both;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #ddd;
+  padding:1em 0em 0.5em 0em;
+  margin:0.3em 0em 0.3em 0em;
+}
+
+h3  {
+  font: 1em/1.2em sans-serif;
+  color: #777;
+  clear:both;
+  font-weight: 400;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0em;
+}
+
+article h3  {
+  font: 1em/1.2em sans-serif;
+  color: #777;
+  clear:both;
+  font-weight: 400;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0em;
+}
+
+h4  {
+  font: 1em/1em sans-serif;
+  color: #555555;
+  clear:both;
+  font-weight: 300;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.4em;
+}
+
+article h4  {
+  font: 1em/1em sans-serif;
+  color: #555555;
+  clear:both;
+  font-weight: 300;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 1px #fff;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.4em;
+}
+
+article h5  {
+  font: 0.9em/1.2em sans-serif;
+  color: #565656;
+  clear:both;
+  font-weight: normal;
+  letter-spacing: 1.2pt;
+  word-spacing: -0.8pt;
+  text-shadow: 1px 1px 2px #999;
+  padding:0.7em 0em 0.7em 0em;
+  margin:0.7em 0em 0.7em 0.4em;
+}
+
+
+}
