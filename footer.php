@@ -23,7 +23,7 @@
 
     <div class="eightcol center">
 
-				<p>Copyright&nbsp;2017&nbsp; &mdash; <a href="http://nocturnalgg.com/" target="_blank">Nocturnal</a></p>
+				<p><a href="http://nocturnalgg.com/" target="_blank">Copyright 2017 &mdash; Nocturnal</a></p>
 
 		</div>
 

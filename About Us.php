@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <!-- Start Post -->
-<?php query_posts('cat=13&posts_per_page=1'); ?>
+<?php query_posts('cat=2&posts_per_page=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
 <span itemscope itemtype="https://schema.org/Article">
 <section class="container">

@@ -167,14 +167,11 @@ YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP
 
     <div class="eightcol center">
 			<article class="article">
-				<h2>About</h2>
-
-				<p class="justify">Lorem ipsum dolor sit amet, erat simul no sit, est vidit tation te. Ius te copiosae senserit, cum aliquam argumentum instructior ex. Id sed etiam molestiae, te eum admodum vivendum interpretaris. No eam sale alterum, cu modus facilis eam.</p>
-
-				<p class="justify">Nam facilisi phaedrum an, alia accusamus id sed. Ad nec graece graeci persius, partiendo petentium consectetuer sed an. Detraxit honestatis usu ne. Ad nec detraxit corrumpit, te volumus accusam accusamus pro, an illum alterum adolescens mel.</p>
-
-				<p class="justify">No pro partem graece, ne per fabulas hendrerit tincidunt, mei erant laoreet percipit no. Postea pertinax nam ad, ex ius decore omittam, per ea persius liberavisse. Lorem tacimates vel id, vix ut putant sententiae. In sed eligendi deseruisse percipitur, option antiopam his ex. Tritani petentium ea pri, quot laudem ponderum cum id. Equidem facilisis gubergren at est, ei offendit insolens mediocrem vix.</p>
-			</article>
+				<?php query_posts('cat=2&posts_per_page=1'); ?>
+				<?php while (have_posts()) : the_post(); ?>
+				  <h2 class="center" itemprop="name headline"><?php the_title(); ?></h2>
+					<?php the_content(); ?>
+				<?php endwhile;?>
 		</div>
 
 		<div class="twocol last">
