@@ -100,6 +100,7 @@
 <body>
 <a name="top"></a>
 
+<br />
 <!-- Header -->
 
 <section class="container">
@@ -117,7 +118,7 @@
 </section>
 
 <!-- /Header -->
-
+<br />
 <!-- Nav -->
 
 <section class="container">
@@ -130,9 +131,9 @@
 			<nav class="nav">
   			<ul class="nav-list">
     			<li class="nav-item"><a href="http://nocturnalgg.com/">Home</a></li>
-					<li class="nav-item"><a href="http://nocturnalgg.com/">Services</a></li>
+					<li class="nav-item"><a href="http://nocturnalgg.com/servers/" target="_blank">Servers</a></li>
 					<li class="nav-item"><a href="http://nocturnalgg.com/">Store</a></li>
-					<li class="nav-item"><a href="http://nocturnalgg.com/">Forum</a></li>
+					<li class="nav-item"><a href="http://nocturnalgg.com/forums/forum/test/">Forum</a></li>
 					<li class="nav-item"><a href="http://nocturnalgg.com/">Creators</a></li>
   			</ul>
 			</nav>
